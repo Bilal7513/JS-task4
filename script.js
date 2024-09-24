@@ -61,22 +61,22 @@ function createItem(){
     div.classList.add('slider-item','relative','animate-fade','hover:animate-none','sm:w-[600px]','md:w-[700px]','lg:w-[980px]');
     
     const img = document.createElement('img');
-    img.classList.add('w-[300px]','h-[160px]','rounded-lg','transition-[opacity]','ease-in','duration-1000','hover:opacity-80','sm:w-[600px]','sm:h-[340px]','md:w-[700px]','md:h-[360px]','lg:w-[980px]','lg:h-[500px]')
+    img.classList.add('w-[300px]','h-[160px]','rounded-lg','transition-[opacity]','ease-in','duration-1000','hover:opacity-80','sm:w-[600px]','sm:h-[340px]','md:w-[700px]','md:h-[360px]','lg:w-[980px]','lg:h-[480px]','xl:w-[1200px]','xl:h-[520px]')
     img.src = sliderArray[i].imgArray;
     img.alt = 'car image';
     div.appendChild(img);
     
     const span = document.createElement('span');
-    span.classList.add('w-[250px]','absolute','bg-PastelRed','text-center','p-1','rounded','left-[25px]','bottom-0','sm:w-[450px]','sm:left-[75px]','md:w-[500px]','md:left-[95px]','lg:w-[650px]','lg:left-[175px]')
+    span.classList.add('w-[250px]','absolute','bg-PastelRed','text-center','p-1','rounded','left-[25px]','bottom-0','sm:w-[450px]','sm:left-[75px]','md:w-[500px]','md:left-[95px]','lg:w-[600px]','lg:left-[190px]','xl:w-[620px]','xl:left-[180px]')
     
     const h2 = document.createElement('h2');
     h2.innerHTML = sliderArray[i].imgHeading;
-    h2.classList.add('text-[12px]', 'font-medium','sm:text-[16px]','lg:text-[22px]');
+    h2.classList.add('text-[12px]', 'font-medium','sm:text-[16px]','lg:text-[20px]','xl:text-[22px]');
     span.appendChild(h2);
     
     const p = document.createElement('p');
     p.innerHTML = sliderArray[i].imgPara;
-    p.classList.add('text-[8px]','sm:text-[10px]','md:text-[12px]','lg:text-[16px]');
+    p.classList.add('text-[8px]','sm:text-[10px]','md:text-[12px]','lg:text-[15px]','xl:text-[16px]');
     span.appendChild(p);
     
     div.appendChild(span);
@@ -92,7 +92,7 @@ function dots() {
     const dots = document.querySelector('.dots');
     for (let j = 0; j < numberOfSlide; j++) {
         const dot = document.createElement('button');
-        dot.classList.add('dot','w-[8px]','h-[8px]','ml-1','rounded','cursor-pointer','sm:w-[10px]','sm:h-[10px]','sm:rounded-md','lg:w-[14px]','lg:h-[14px]','lg:rounded-lg','lg:mt-[10px]');
+        dot.classList.add('dot','w-[8px]','h-[8px]','ml-1','rounded','cursor-pointer','sm:w-[10px]','sm:h-[10px]','sm:rounded-md','lg:w-[12px]','lg:h-[12px]','lg:rounded-lg','lg:mt-[10px]');
         dot.addEventListener('click', () => {
             i = j;
             createItem();
