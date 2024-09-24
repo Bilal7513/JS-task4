@@ -6,7 +6,7 @@ let sliderTimer;
 
 const sliderArray = [
     {
-        imgArray: new URL('../images/nissan.jpg', import.meta.url).href,
+        imgArray: '/images/nissan.jpg',
         imgHeading: 'Nissan GTR R34 Skyline',
         imgPara: 'Legendary sports car with advanced awd system and iconic RB26DETT engine.',
     },
