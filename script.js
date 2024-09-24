@@ -6,47 +6,47 @@ let sliderTimer;
 
 const sliderArray = [
     {
-        imgArray: 'images/nissan.jpg',
+        imgArray: '/images/nissan.jpg',
         imgHeading: 'Nissan GTR R34 Skyline',
         imgPara: 'Legendary sports car with advanced awd system and iconic RB26DETT engine.',
     },
     {
-        imgArray: 'images/Supra.jpg',
+        imgArray: '/images/Supra.jpg',
         imgHeading: 'Toyota Supra MK4',
         imgPara: 'Iconic sports car known for its 2JZ engine and immense tuning potential.',
     },
     {
-        imgArray: 'images/mazda.jpg',
+        imgArray: '/images/mazda.jpg',
         imgHeading: 'MAZDA RX-7',
         imgPara: 'Lightweight sports car with unique rotary engine and sleek design.',
     },
     {
-        imgArray: 'images/BMW M4.jpg',
+        imgArray: '/images/BMW M4.jpg',
         imgHeading: 'BMW M4',
         imgPara: 'A high-performance coupe famed for its aggressive styling, powerful engine, and track-ready precision handling.',
     },
     {
-        imgArray: 'images/charger.jpg',
+        imgArray: '/images/charger.jpg',
         imgHeading: 'Dodge Charger 1968',
         imgPara: 'Classic muscle car with bold design and powerful V8 engine.',
     },
     {
-        imgArray: 'images/challenger.jpg',
+        imgArray: '/images/challenger.jpg',
         imgHeading: 'DODGE CHALLENGER',
         imgPara: 'Modern muscle car with retro design and powerful V8 engines.',
     },
     {
-        imgArray: 'images/camero.jpg',
+        imgArray: '/images/camero.jpg',
         imgHeading: 'CHEVROLET CAMARO SS',
         imgPara: 'Classic muscle car offering powerful V8 engine and aggressive american styling.',
     },
     {
-        imgArray: 'images/350z.jpg',
+        imgArray: '/images/350z.jpg',
         imgHeading: 'NISSAN 350Z',
         imgPara: 'Sleek sports car known for its powerful V6 engine, offering a combination of performance and style at an accessible price.',
     },
     {
-        imgArray: 'images/toyota86.jpg',
+        imgArray: '/images/toyota86.jpg',
         imgHeading: 'TOYOTA 86',
         imgPara: 'Lightweight sports car celebrated for its agile handling, and pure rear-wheel-drive performance.',
     },
