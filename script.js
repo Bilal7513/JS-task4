@@ -1,3 +1,13 @@
+import NissanImg from './images/nissan.jpg'
+import SupraImg from './images/Supra.jpg'
+import MazdaImg from './images/mazda.jpg'
+import BmwImg from './images/BMW M4.jpg'
+import ChargerImg from './images/charger.jpg'
+import ChallengerImg from './images/challenger.jpg'
+import CamaroImg from './images/camero.jpg'
+import Nissan350z from './images/350z.jpg'
+import Toyota86 from './images/toyota86.jpg'
+
 const sliderContainer = document.getElementById('slider-container');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
@@ -6,47 +16,47 @@ let sliderTimer;
 
 const sliderArray = [
     {
-        imgArray: '/images/nissan.jpg',
+        imgArray: NissanImg,
         imgHeading: 'Nissan GTR R34 Skyline',
         imgPara: 'Legendary sports car with advanced awd system and iconic RB26DETT engine.',
     },
     {
-        imgArray: '/images/Supra.jpg',
+        imgArray: SupraImg,
         imgHeading: 'Toyota Supra MK4',
         imgPara: 'Iconic sports car known for its 2JZ engine and immense tuning potential.',
     },
     {
-        imgArray: '/images/mazda.jpg',
+        imgArray: MazdaImg,
         imgHeading: 'MAZDA RX-7',
         imgPara: 'Lightweight sports car with unique rotary engine and sleek design.',
     },
     {
-        imgArray: '/images/BMW M4.jpg',
+        imgArray: BmwImg,
         imgHeading: 'BMW M4',
         imgPara: 'A high-performance coupe famed for its aggressive styling, powerful engine, and track-ready precision handling.',
     },
     {
-        imgArray: '/images/charger.jpg',
+        imgArray: ChargerImg,
         imgHeading: 'Dodge Charger 1968',
         imgPara: 'Classic muscle car with bold design and powerful V8 engine.',
     },
     {
-        imgArray: '/images/challenger.jpg',
+        imgArray: ChallengerImg,
         imgHeading: 'DODGE CHALLENGER',
         imgPara: 'Modern muscle car with retro design and powerful V8 engines.',
     },
     {
-        imgArray: '/images/camero.jpg',
+        imgArray: CamaroImg,
         imgHeading: 'CHEVROLET CAMARO SS',
         imgPara: 'Classic muscle car offering powerful V8 engine and aggressive american styling.',
     },
     {
-        imgArray: '/images/350z.jpg',
+        imgArray: Nissan350z,
         imgHeading: 'NISSAN 350Z',
         imgPara: 'Sleek sports car known for its powerful V6 engine, offering a combination of performance and style at an accessible price.',
     },
     {
-        imgArray: '/images/toyota86.jpg',
+        imgArray: Toyota86,
         imgHeading: 'TOYOTA 86',
         imgPara: 'Lightweight sports car celebrated for its agile handling, and pure rear-wheel-drive performance.',
     },
