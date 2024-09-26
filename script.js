@@ -1,13 +1,3 @@
-import NissanImg from './images/nissan.jpg'
-import SupraImg from './images/Supra.jpg'
-import MazdaImg from './images/mazda.jpg'
-import BmwImg from './images/BMW M4.jpg'
-import ChargerImg from './images/charger.jpg'
-import ChallengerImg from './images/challenger.jpg'
-import CamaroImg from './images/camero.jpg'
-import Nissan350z from './images/350z.jpg'
-import Toyota86 from './images/toyota86.jpg'
-
 const sliderContainer = document.getElementById('slider-container');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
@@ -16,47 +6,47 @@ let sliderTimer;
 
 const sliderArray = [
     {
-        imgArray: NissanImg,
+        imgArray: './images/nissan.jpg',
         imgHeading: 'Nissan GTR R34 Skyline',
         imgPara: 'Legendary sports car with advanced awd system and iconic RB26DETT engine.',
     },
     {
-        imgArray: SupraImg,
+        imgArray: './images/Supra.jpg',
         imgHeading: 'Toyota Supra MK4',
         imgPara: 'Iconic sports car known for its 2JZ engine and immense tuning potential.',
     },
     {
-        imgArray: MazdaImg,
+        imgArray: './images/mazda.jpg',
         imgHeading: 'MAZDA RX-7',
         imgPara: 'Lightweight sports car with unique rotary engine and sleek design.',
     },
     {
-        imgArray: BmwImg,
+        imgArray: './images/BMW M4.jpg',
         imgHeading: 'BMW M4',
         imgPara: 'A high-performance coupe famed for its aggressive styling, powerful engine, and track-ready precision handling.',
     },
     {
-        imgArray: ChargerImg,
+        imgArray: './images/charger.jpg',
         imgHeading: 'Dodge Charger 1968',
         imgPara: 'Classic muscle car with bold design and powerful V8 engine.',
     },
     {
-        imgArray: ChallengerImg,
+        imgArray: './images/challenger.jpg',
         imgHeading: 'DODGE CHALLENGER',
         imgPara: 'Modern muscle car with retro design and powerful V8 engines.',
     },
     {
-        imgArray: CamaroImg,
+        imgArray: './images/camero.jpg',
         imgHeading: 'CHEVROLET CAMARO SS',
         imgPara: 'Classic muscle car offering powerful V8 engine and aggressive american styling.',
     },
     {
-        imgArray: Nissan350z,
+        imgArray: './images/350z.jpg',
         imgHeading: 'NISSAN 350Z',
         imgPara: 'Sleek sports car known for its powerful V6 engine, offering a combination of performance and style at an accessible price.',
     },
     {
-        imgArray: Toyota86,
+        imgArray: './images/toyota86.jpg',
         imgHeading: 'TOYOTA 86',
         imgPara: 'Lightweight sports car celebrated for its agile handling, and pure rear-wheel-drive performance.',
     },
@@ -68,25 +58,25 @@ function createItem(){
     sliderContainer.innerHTML = '';
 
     const div = document.createElement('div');
-    div.classList.add('slider-item','relative','animate-fade','hover:animate-none','sm:w-[600px]','md:w-[700px]','lg:w-[980px]');
+    div.classList.add('slider-item','relative','animate-fade','hover:animate-none');
     
     const img = document.createElement('img');
-    img.classList.add('w-[300px]','h-[160px]','rounded-lg','transition-[opacity]','ease-in','duration-1000','hover:opacity-80','sm:w-[600px]','sm:h-[340px]','md:w-[700px]','md:h-[360px]','lg:w-[980px]','lg:h-[480px]','xl:w-[1200px]','xl:h-[520px]')
+    img.classList.add('w-[260px]','h-[180px]','rounded-lg','transition-[opacity]','ease-in','duration-1000','hover:opacity-80','sm:w-[550px]','sm:h-[360px]','md:w-[650px]','md:h-[430px]','lg:w-[900px]','lg:h-[500px]')
     img.src = sliderArray[i].imgArray;
     img.alt = 'car image';
     div.appendChild(img);
     
     const span = document.createElement('span');
-    span.classList.add('w-[250px]','absolute','bg-PastelRed','text-center','p-1','rounded','left-[25px]','bottom-0','sm:w-[450px]','sm:left-[75px]','md:w-[500px]','md:left-[95px]','lg:w-[600px]','lg:left-[190px]','xl:w-[620px]','xl:left-[180px]')
+    span.classList.add('w-[240px]','absolute','bg-PastelRed','text-center','p-1','rounded','bottom-0','left-[10px]','sm:w-[500px]','sm:left-[25px]','md:w-[580px]','md:left-[35px]','lg:w-[800px]','lg:left-[50px]')
     
     const h2 = document.createElement('h2');
     h2.innerHTML = sliderArray[i].imgHeading;
-    h2.classList.add('text-[12px]', 'font-medium','sm:text-[16px]','lg:text-[20px]','xl:text-[22px]');
+    h2.classList.add('text-[12px]', 'font-medium','sm:text-[18px]','md:text-[20px]','lg:text-[22px]');
     span.appendChild(h2);
     
     const p = document.createElement('p');
     p.innerHTML = sliderArray[i].imgPara;
-    p.classList.add('text-[8px]','sm:text-[10px]','md:text-[12px]','lg:text-[15px]','xl:text-[16px]');
+    p.classList.add('text-[8px]','sm:text-[12px]','md:text-[14px]','lg:text-18px]');
     span.appendChild(p);
     
     div.appendChild(span);
@@ -102,7 +92,7 @@ function dots() {
     const dots = document.querySelector('.dots');
     for (let j = 0; j < numberOfSlide; j++) {
         const dot = document.createElement('button');
-        dot.classList.add('dot','w-[8px]','h-[8px]','ml-1','rounded','cursor-pointer','sm:w-[10px]','sm:h-[10px]','sm:rounded-md','lg:w-[12px]','lg:h-[12px]','lg:rounded-lg','lg:mt-[10px]');
+        dot.classList.add('dot','w-[8px]','h-[8px]','ml-1','rounded-xl','cursor-pointer','mt-[8px]','sm:w-[12px]','sm:h-[12px]','md:w-[13px]','md:h-[13px]','lg:w-[14px]','lg:h-[14px]');
         dot.addEventListener('click', () => {
             i = j;
             createItem();
@@ -144,7 +134,7 @@ function showNext(){
         i = 0;
     }
     createItem();
-    sliderTime();
+    // sliderTime();
 }
 
 function showPrev(){
@@ -154,7 +144,7 @@ function showPrev(){
         i = sliderArray.length -1;
     }
     createItem();
-    sliderTime();
+    // sliderTime();
 }
 
 nextBtn.addEventListener('click', showNext);
@@ -162,4 +152,4 @@ nextBtn.addEventListener('click', showNext);
 prevBtn.addEventListener('click', showPrev);
 
 createItem();
-sliderTime();
+// sliderTime();
