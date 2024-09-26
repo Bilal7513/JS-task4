@@ -134,7 +134,7 @@ function showNext(){
         i = 0;
     }
     createItem();
-    // sliderTime();
+    sliderTime();
 }
 
 function showPrev(){
@@ -144,7 +144,7 @@ function showPrev(){
         i = sliderArray.length -1;
     }
     createItem();
-    // sliderTime();
+    sliderTime();
 }
 
 nextBtn.addEventListener('click', showNext);
@@ -152,4 +152,4 @@ nextBtn.addEventListener('click', showNext);
 prevBtn.addEventListener('click', showPrev);
 
 createItem();
-// sliderTime();
+sliderTime();
